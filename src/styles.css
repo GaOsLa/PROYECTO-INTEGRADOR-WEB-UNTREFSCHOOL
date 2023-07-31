@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
 *{
     margin: 0px;
 }
 /* --------------------menu hamburguesa--------------------------- */
 body {
-  font-family: Poppins, Arial, sans-serif;
-  color: #FC7300 , #1F8A70 , #00425A ,
-  #181823, #EFF5F5;
+  font-family: Belanosima, Arial, sans-serif;
 }
 .navbar {
-  background-color: #FC7300;
+  background-color: #00425A;
   color: #EFF5F5;
   display: flex;
   grid-template-columns: repeat(4, fr);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 15px;
   position: fixed;
     top: 0;
@@ -77,11 +76,6 @@ body {
   background-size: cover; 
   background-position: center; 
 }
-/* body{
-  padding-left: 5px;
-  padding-right: 5px;
-  /* width: 100%; */
-/*} */
 header{
   color: #00425A;
 }
@@ -111,8 +105,7 @@ h2{
 .un-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-
-  /* grid-gap: 20px; */
+  grid-gap: 20px;
   overflow: hidden;
   height: max-content;
   padding-bottom: 30px;
