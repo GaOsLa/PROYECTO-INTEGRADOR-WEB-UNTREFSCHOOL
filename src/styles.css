@@ -9,7 +9,7 @@ body {
   font-family: Belanosima, Arial, sans-serif;
 }
 .navbar {
-  background-color: #00425A;
+  background-color: #FC7300;
   color: #EFF5F5;
   display: flex;
   grid-template-columns: repeat(4, fr);
@@ -55,6 +55,8 @@ body {
   .hamburger-menu {
       display: flex;
   }
+  .navbar{
+      justify-content: left;  }
   .menu-items.show {
       display: flex;
       flex-direction: column;
@@ -84,7 +86,8 @@ main{
 }
 h2{
   padding-top: 60px;
-  padding-left: 5px;
+  /* padding-left: 50px; */
+  text-align: center;
 }
 .qs-div-p1{
   width: 50%;
@@ -120,6 +123,7 @@ p{
 .qs-div-container{
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .imgs{
   max-width: 50%;
@@ -167,6 +171,9 @@ margin-top: 5px;
   color: #EFF5F5;
   /* position: fixed; */
   /* padding: 0px; */
+}
+.foo-div-a{
+  text-decoration: none;
 }
 
 /*---------------responsive-------------------------*/

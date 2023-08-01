@@ -6,12 +6,12 @@
     <meta descprition="Pagina de la UNTREFSchool" authot="Gabriel O Lamenza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNTREFSchool</title>
-    <link rel="icon" type="image/png" href="src/images/favicon.png">
-    <link rel="stylesheet" href="contstyle.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="src/contstyle.css">
 </head>
 <body>
     <!-- editar en la siguiente linea, la parte del e-mail para que le llegue los envios realizados a travez de formsubmit.co -->
-    <form target="_blank" action="https://formsubmit.co/qlserviciosintegrales@gmail.com" method="POST">
+    <form id="myForm" target="_blank" action="https://formsubmit.co/qlserviciosintegrales@gmail.com" method="POST">
         <h2>Contáctenos</h2>
         <div class="field">
             <input type="text" name="name" required>
@@ -29,10 +29,18 @@
             <textarea placeholder="" class="form-control" name="message" rows="10" required></textarea>
             <label for="message">Deje su comentario</label>
         </div>
-        <button type="submit" class="submitbtn">Enviar</button>
-   
+        <button type="submit" id="submitBtnId" class="submitbtn">Enviar</button>
+        <button type="button" id="finBtnId" class="submitbtn" style="display: none;">Cerrar</button>
     </form>
 
-
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+          // Desactivar el botón submit después de enviar el formulario
+          document.getElementById("submitBtnId").disabled = true;
+          document.getElementById("submitBtnId").style.display="none"
+          document.getElementById("finBtnId").style.display="inline"
+          window.location.href = "../"
+        });
+        </script>
 </body>
 </html>
