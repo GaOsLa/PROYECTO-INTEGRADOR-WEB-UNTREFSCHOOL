@@ -2,9 +2,13 @@
 ## Diplomatura en desarrollo web frontend
 ### Proyecto Integrador
 #### autor: Gabriel O. Lamenza
+e-mail: golcars@gmail.com
+
+discord: GaOsLa#7821
+
 #### Julio/2023
 
-Se genero la misma siguiendo las pautas dictadas el el documento Proyecto-integrador-desarrollo-web
+Se genero la misma siguiendo las pautas dictadas en el documento Proyecto-integrador-desarrollo-web
 se realizo maquetado a mano y luego pre-diseño en figma
 se realizo la creacion del codigo html
 se realizaron mejoras con CSS
