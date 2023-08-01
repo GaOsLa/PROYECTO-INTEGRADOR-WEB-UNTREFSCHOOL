@@ -10,6 +10,7 @@ body {
 }
 .navbar {
   background-color: #FC7300;
+  height: 20px;
   color: #EFF5F5;
   display: flex;
   grid-template-columns: repeat(4, fr);
@@ -21,6 +22,10 @@ body {
     left: 0;
     right: 0;
     width: 100%;
+}
+.menu-items li a:hover{
+  color:#181823;
+  font-size: larger;
 }
 .menu-items {
   list-style: none;
@@ -62,11 +67,15 @@ body {
       flex-direction: column;
       background-color: #333;
       position: absolute;
-      top: 60px;
+      top: 50px;
       left: 0;
       right: 0;
   }
-}
+  .menu-items li a:hover{
+    color:#EFF5F5;
+    font-size: larger;
+   }
+ }
 /* -------------------seccion body encabezados-------------------------------------------- */
 .body-section-h1{
   padding-top: 80px;
@@ -101,6 +110,7 @@ h2{
 .propedu{
   display: grid;
   grid-template-columns: repeat(4, 3fr);
+  grid-auto-flow: column;
   justify-content: space-between;
   list-style-type: none;
   padding-left: 5%;
@@ -148,10 +158,6 @@ p{
   text-overflow: ellipsis;
   max-width: inherit; /* Establece el ancho máximo del texto abreviado */
 }
-.leer+ {
-display: inline-block;
-margin-top: 5px;
-}
 .textocompleto, .textocompleto2, .un-container {
   display: grid;
   overflow: auto;  
@@ -164,13 +170,10 @@ margin-top: 5px;
   grid-template-columns:repeat(3, 4fr) ;
   justify-content: space-between;
   text-align: center;
-  /* height: 40px; */
   list-style: none;
   overflow: hidden; 
   background-color:  #181823;
   color: #EFF5F5;
-  /* position: fixed; */
-  /* padding: 0px; */
 }
 .foo-div-a{
   text-decoration: none;
@@ -178,7 +181,7 @@ margin-top: 5px;
 
 /*---------------responsive-------------------------*/
 @media  (320px>width>768px){
-  
+
   .un-container {
     display: grid;
     grid-template-columns:1fr;
@@ -187,6 +190,7 @@ margin-top: 5px;
 }
 
 @media  (max-width: 320px){
+
   main{
     font-size: 13px;
     /* padding-left: 5px; */
@@ -196,6 +200,15 @@ margin-top: 5px;
   .imgs{
     max-width: 95%;
     padding-left: 2%;
+  }
+  .propedua{
+    display: grid;
+    justify-content: center;
+  }
+  .propedu{
+    display: inline;
+    justify-content: center;
+    text-align: center;
   }
   .qs-div-container{
     display: inline;
@@ -208,7 +221,6 @@ margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
    }
-
   .un-container {
     display: inline;
     font-size: small;
